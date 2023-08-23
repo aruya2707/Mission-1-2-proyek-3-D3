@@ -1,0 +1,134 @@
+:root{
+    --color1: #fff;
+    --color2: #000;
+}
+
+main{
+    background-color:aliceblue;
+    border: 1px solid var(--color2);
+}
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.kuning {
+    background: yellow;
+    padding: 10px;
+    flex: 0 0 15%;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.hitam {
+    background: var(--color2);
+    padding: 10px;
+    flex: 0 0 85%;
+    align-items: center;
+    text-align: center;
+    color: var(--color1);
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.hijau{
+    background: green;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.coklat{
+    background: brown;
+    text-align: center;
+    color: var(--color1);
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.pink{
+    background: pink;
+    align-items: center;
+    text-align: center;
+    color: var(--color2);
+    padding: 30px;
+    grid-column: 3;
+    grid-row-start: 2;
+    grid-row-end:5 ;
+}
+.biru{
+    background: lightblue;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column: 4;
+    grid-row: 2;
+}
+.merah{
+    background: red;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column: 1;
+    grid-row: 3;
+}
+.putih{
+    background: white;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column: 2;
+    grid-row: 3;
+}
+.ungu{
+    background: purple;
+    align-items: center;
+    text-align: center;
+    color: var(--color1);
+    padding: 40px;
+    grid-column: 4;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    
+}
+.biru_tua{
+    background: blue;
+    align-items: center;
+    text-align: center;
+    color: var(--color2);
+    padding: 30px;
+    grid-column: 1;
+    grid-row-start:4 ;
+    grid-row-end: 7;   
+}
+.abu{
+    background: grey;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+.orange{
+    background: orange;
+    text-align: center;
+    color: var(--color2);
+    padding: 10px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 6;
+}
