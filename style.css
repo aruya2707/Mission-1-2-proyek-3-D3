@@ -10,9 +10,6 @@ main{
 body{
     padding: 5%;
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
-    
 }
 
 .container{
