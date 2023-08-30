@@ -1,11 +1,11 @@
 const allUsers = [
-    { id: 1, name: 'User 1', username: 'user1', followed: false },
-    { id: 2, name: 'User 2', username: 'user2', followed: false },
-    { id: 3, name: 'User 3', username: 'user3', followed: false },
-    { id: 4, name: 'User 4', username: 'user4', followed: false },
-    { id: 5, name: 'User 5', username: 'user5', followed: false },
-    { id: 6, name: 'User 6', username: 'user6', followed: false },
-    { id: 7, name: 'User 7', username: 'user7', followed: false }
+    { id: 1, name: 'User 1', username: 'user1', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 2, name: 'User 2', username: 'user2', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 3, name: 'User 3', username: 'user3', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 4, name: 'User 4', username: 'user4', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 5, name: 'User 5', username: 'user5', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 6, name: 'User 6', username: 'user6', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' },
+    { id: 7, name: 'User 7', username: 'user7', followed: false, profilePictures: 'https://i.pinimg.com/1200x/70/53/d7/7053d7d1eacfbd908c41d38e02f31866.jpg' }
 ];
 
 const userList = document.getElementById('user-list');
@@ -22,6 +22,11 @@ function renderUsers(){
         const profilePic = document.createElement('div');
         profilePic.className = 'profile_pic';
         userItem.appendChild(profilePic);
+
+        const profileImg = document.createElement('img');
+        profileImg.src = user.profilePictures;
+        profileImg.alt = `${user.name}'s Profile Pictures`;
+        profilePic.appendChild(profileImg);
 
         const profileInfo = document.createElement('div');
         profileInfo.className = 'profile_info'
