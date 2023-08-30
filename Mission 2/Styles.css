@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,12 +6,15 @@ body {
     display: flex;
   }
   
-  .title {
+.title {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 20px;
   }
 
+.background{
+  background-color: #CBC3E3;
+}
   /*Split screen*/
 .box {
     flex: 1;
@@ -19,16 +23,15 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #CBC3E3;
 }
 
- .left{
+.left{
     order: 1;  
- }
+}
 
- .right{
+.right{
     order: 2;
- }
+}
 
   /*pembatas*/
   .divider {
@@ -48,38 +51,43 @@ body {
     border: 1px solid black;
   }
   
-  .profile_pic {
+  .profile_pic img {
     width: 50px;
     height: 50px;
-    background-color: gray;
     border-radius: 50%;
     margin-right: 10px;
   }
+
   
-  .profile_info {
-    flex: 1;
-  }
+.profile_info {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+
+}
   
   /*styling buat buttonnya*/
-  .follow-button {
+.follow-button {
     background-color: #007bff;
     color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-  }
+}
   
   .followed {
-    background-color: #28a745;
+    background-color: red;
   }
   
   /* ini tu styling nama ama username */
   .display_name {
     font-weight: bold;
+    margin-bottom: 5px;
   }
   
   .username {
     color: #666;
+
   }
   

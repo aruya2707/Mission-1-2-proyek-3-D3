@@ -15,6 +15,8 @@ function renderUsers(){
     userList.innerHTML = '';
     friendList.innerHTML = '';
 
+    let totalFriends = 0;
+
     allUsers.forEach(user => {
         const userItem = document.createElement('li');
         userItem.className = 'profile';
@@ -39,22 +41,26 @@ function renderUsers(){
 
         const username = document.createElement('span');
         username.className = 'username';
-        username.textContent = '@${user.username}';
+        username.textContent = `@${user.username}`;
         profileInfo.appendChild(username);
 
         const actionButton = document.createElement('button');
         actionButton.className = user.followed ? 'followed follow-button' : 'follow-button';
-        actionButton.textContent = user.followed ? 'Following' : 'Follow';
+        actionButton.textContent = user.followed ? 'Unfollow' : 'Follow';
         actionButton.addEventListener('click', () => toggleFollow(user));
 
         userItem.appendChild(actionButton);
 
         if(user.inFriend){
             friendList.appendChild(userItem);
+            totalFriends++;
         }else{
             userList.appendChild(userItem);
         }
     });
+
+    const friendCountElement = document.getElementById('friend-count');
+    friendCountElement.textContent = totalFriends;
 }
 
 function toggleFollow(user){
