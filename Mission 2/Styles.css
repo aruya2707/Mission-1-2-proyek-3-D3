@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  /*Split screen*/
+.box {
+    flex: 1;
+    width: 50%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #CBC3E3;
+}
+
+ .left{
+    order: 1;  
+ }
+
+ .right{
+    order: 2;
+ }
+
+  /*pembatas*/
+  .divider {
+    display: block;
+    height: 1px;
+    background-color: #000;
+    margin: 20px auto;
+    width: 80%;
+  }
+  
+  /*styling PP */
+  .profile {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  .profile_pic {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .profile_info {
+    flex: 1;
+  }
+  
+  /*styling buat buttonnya*/
+  .follow-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .followed {
+    background-color: #28a745;
+  }
+  
+  /* ini tu styling nama ama username */
+  .display_name {
+    font-weight: bold;
+  }
+  
+  .username {
+    color: #666;
+  }
+  
